@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    
+</head>
+<body>
+   
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+        }
+        .calender{
+            position: relative;
+            font-family: cursive;
+            text-align: center;
+            width: 200px;
+            height: 220px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+        }
+        .calender #month {
+            position: relative;
+            padding: 5px 10px;
+            background: #ff6331;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 auto;
+        }
+        .calender #dayName {
+            position: relative;
+            color: #999;
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 3px;
+        }
+        .calender #dayNum{
+            position: relative;
+           line-height: 1em;
+            color: #333;
+            font-size: 70px;
+            font-weight: 700;
+            margin-top: -30px;
+        }
+        .calender #year {
+            position: relative;
+            color: rgb(88, 86, 86);
+            font-size: 29px;
+            font-weight: 700;
+            margin-top: -70px;
+        }
+        
+
+    </style>
+ 
+    <div class="calender">
+        <p id="month"></p>
+        <p id="dayName"></p>
+        <p id="dayNum"></p>
+        <p id="year"></p>
+    </div>
+    <script src="calender.js"></script>
+</body>
+</html>
